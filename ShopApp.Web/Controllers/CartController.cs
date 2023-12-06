@@ -195,9 +195,9 @@ namespace ShopApp.Web.Controllers
         private Payment PaymentProcess(OrderModel model)
         {
             Options options = new Options();
-            options.ApiKey = "sandbox-GmGSPoSXmDVH6SdLDUmUuMDHuhAAZNip";
-            options.SecretKey = "sandbox-bKwrNLmGrPDYJyHH5leRq4On0arh3GDy";
-            options.BaseUrl = "https://sandbox-merchant.iyzipay.com/";
+            options.ApiKey = "";
+            options.SecretKey = "";
+            options.BaseUrl = "";
 
             CreatePaymentRequest request = new CreatePaymentRequest();
             request.Locale = Locale.TR.ToString();
