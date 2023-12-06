@@ -1,0 +1,41 @@
+﻿@model RegisterModel
+
+
+
+<div class="card p-3 mt-5" style="margin-left:20%; width:60%">
+    <div class="card-body">
+        <h1 class="h2 text-center">Register</h1>
+
+        <form asp-action="Register">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group mb-2">
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="FullName"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-2">
+                <label asp-for="RePassword"></label>
+                <input asp-for="RePassword" type="password" class="form-control" />
+                <span asp-validation-for="RePassword" class="text-danger"></span>
+            </div>
+            <div class="clearfix">
+                <button type="submit" class="float-end btn btn-primary mt-1 px-4">Register</button>
+            </div>
+        </form>
+    </div>
+</div>

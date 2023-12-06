@@ -1,0 +1,31 @@
+﻿@model ProfileModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card mt-5">
+    <h5 class="card-header">Profile Information</h5>
+    <div class="card-body">
+        <div class="clearfix">
+            <a href="/Profile/ChangePassword/@Model.UserId" class="btn btn-warning float-end mb-2">
+                Change Password
+            </a>
+        </div>
+        <table class="table table-bordered">
+            <tr>
+                <td class="w-25">Fullname</td>
+                <td>@Model.Fullname</td>
+            </tr>
+            <tr>
+                <td class="w-25">Username</td>
+                <td>@Model.Username</td>
+            </tr>
+            <tr>
+                <td class="w-25">E-mail Address</td>
+                <td>@Model.Email</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
