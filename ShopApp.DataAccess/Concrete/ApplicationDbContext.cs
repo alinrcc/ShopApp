@@ -13,7 +13,7 @@ namespace ShopApp.DataAccess.Concrete
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-7P3FIAH;Database=ShopApp;Integrated Security=True;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("Server=;Database=ShopApp;Integrated Security=True;TrustServerCertificate=True");
             }
         }
 
